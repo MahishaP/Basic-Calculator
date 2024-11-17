@@ -1,0 +1,125 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Body styling */
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d1e0f0 0%, #dde2e6 100%); 
+    background-color: hsl(0, 0%, 95%);
+}
+
+/* Calculator container */
+.calculator {
+    padding: 20px;
+    border: 3px solid hsl(235, 8%, 70%);
+    background-color: hsl(240, 15%, 12%); 
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); 
+}
+
+/* Display input */
+.display input {
+    width: 360px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 10px;
+    background-color: hsl(240, 5%, 25%);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: right;
+    border-radius: 10px; 
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+input::placeholder {
+    color: rgb(200, 200, 200); 
+}
+
+/* Button styling */
+button {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(303, 64%, 45%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button:hover {
+    background-color: hsl(303, 80%, 65%);
+}
+
+button:active {
+    background-color: hsl(303, 80%, 75%);
+    transform: scale(0.95);
+}
+
+
+/* Operator button styling */
+.oprBtn {
+    background-color: hsl(29, 100%, 50%); 
+}
+
+.oprBtn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.oprBtn:active {
+    background-color: hsl(35, 100%, 75%);
+}
+
+
+/* Equals button styling */
+#eqlBtn {
+    background-color: hsl(14, 100%, 55%); 
+}
+
+#eqlBtn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+#eqlBtn:active {
+    background-color: hsl(14, 100%, 65%);
+    transform: scale(0.95);
+}
+
+
+/* Special plus-minus button */
+#plusMinusBtn {
+    background-color: hsl(207, 90%, 45%); 
+}
+
+#plusMinusBtn:hover {
+    background-color: hsl(207, 90%, 55%);
+}
+
+#plusMinusBtn:active {
+    background-color: hsl(207, 90%, 65%);
+    transform: scale(0.95);
+}
+
+
+/* Title of calculator Version */
+h3{
+    color: rgb(165, 165, 165);
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
